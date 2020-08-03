@@ -10,6 +10,8 @@ class Product extends Model {
     public string $description;
     public float $price;
 
+    //TODO конструктор
+
     public function getTableName() {
         return 'products';
     }

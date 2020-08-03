@@ -7,8 +7,12 @@ use app\model\{Product, User};
 
 spl_autoload_register([new AutoLoad(), 'loadClass']);
 
-$product = new Product(new Db());
-echo $product->getOne(1);
+$product = new Product();
+$product->name = "Tea";
+$product->description = "LoremLoremLorem";
+$product->price = 450;
+$product->insert();
+var_dump($product);
 
-$user = new User(new Db());
-echo $user->getOne(2);
+//$user = new User();
+//var_dump($user->getOne(2));

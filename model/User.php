@@ -7,6 +7,8 @@ class User extends Model {
     public string $login;
     public string $password;
 
+    //TODO конструктор
+
     public function getTableName() {
         return 'users';
     }
